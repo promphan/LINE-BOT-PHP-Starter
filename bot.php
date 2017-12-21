@@ -1,2 +1,2 @@
 <?php
-echo "I am a bot";
+stream "I am a bot";
