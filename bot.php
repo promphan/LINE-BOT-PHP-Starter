@@ -45,7 +45,3 @@ if (!is_null($events['events'])) {
 	}
 }
 echo "OK";
-
-<?php
-$outputText = new \LINE\LINEBot\MessageBuilder\LocationMessageBuilder("Eiffel Tower", "Champ de Mars, 5 Avenue Anatole France, 75007 Paris, France", 48.858328, 2.294750);
-$response = $bot->replyMessage($event->getReplyToken(), $outputText);
