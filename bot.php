@@ -28,13 +28,6 @@ if (!is_null($events['events'])) {
 				'replyToken' => $replyToken,
 				'messages' => [$messages],
 			];
-			{
-    "type": "location",
-    "title": "my location",
-    "address": "〒150-0002 東京都渋谷区渋谷２丁目２１−１",
-    "latitude": 35.65910807942215,
-    "longitude": 139.70372892916203
-}
 		        $post = json_encode($data);
 			$headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
 
