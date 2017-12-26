@@ -28,6 +28,11 @@ if (!is_null($events['events'])) {
 				'replyToken' => $replyToken,
 				'messages' => [$messages],
 			];
+			{
+         		 "type": "sticker",
+ 			 "packageId": "1",
+  			"stickerId": "1"
+			}
 			$post = json_encode($data);
 			$headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
 
