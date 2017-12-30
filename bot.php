@@ -32,15 +32,6 @@ if($arrJson['events'][0]['message']['text'] == "สวัสดี"){
   $arrPostData['messages'][0]['type'] = "text";
   $arrPostData['messages'][0]['text'] = "ฉันไม่เข้าใจคำสั่ง";
 }
- 
-$arrHeader = array();
-$arrHeader[] = "Content-Type: application/json";
-$arrHeader[] = "Authorization: Bearer {$strAccessToken}";
- 
-$arrPostData = array();
-$arrPostData['to'] = “U7b00c1fe4e73a36594e58523f679bac6”;
-$arrPostData['messages'][0]['type'] = "text";
-$arrPostData['messages'][0]['text'] = "นี้คือการทดสอบ Push Message";
  
  
 $ch = curl_init();
@@ -56,4 +47,3 @@ curl_close ($ch);
 
   
 ?>
-
